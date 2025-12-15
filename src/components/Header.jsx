@@ -3,15 +3,18 @@ import { Users } from 'lucide-react';
 
 const Header = ({ onNavigateToAdmin }) => {
   return (
-    <div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white relative overflow-hidden">
+<div className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
       
       <div className="container mx-auto px-6 py-16 relative z-10">
         <div className="flex items-center gap-4 mb-6">
-          <div className="bg-white p-4 rounded-2xl shadow-2xl">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center">
-              <span className="text-2xl font-bold text-yellow-400">AP</span>
-            </div>
+          {/* Circular Logo with Border - Exactly like Algérie Poste style */}
+          <div className="relative">
+            <img 
+              src="/src/assets/logo.webp" 
+              alt="Algérie Poste Logo" 
+              className="w-28 h-28 object-contain rounded-full bg-white p-3 ring-4 ring-white/30 shadow-2xl"
+            />
           </div>
           <div>
             <h1 className="text-5xl font-bold mb-2">Algérie Poste</h1>
